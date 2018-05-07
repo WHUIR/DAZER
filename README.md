@@ -2,13 +2,10 @@
 Our Tensorflow implement of ACL 2018 paper [A deep relevance model for zero-shot document filtering]
 
 <p align="center"> 
-<img src= width="400" align="center">
+<img src='https://github.com/WHUIR/DAZER/blob/master/model-img.png' width="400" align="center">
 </p>
 
 If you use this code for your scientific work, please cite it as ([bibtex](#cite-the-paper)):
-
-
-
 
 ### Requirements
 ---
