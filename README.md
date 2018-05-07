@@ -9,11 +9,9 @@ If you use this code for your scientific work, please cite it as ([bibtex](#cite
 
 ### Requirements
 ---
-- Tensorflow 0.12 
+- Tensorflow 1.0 
 - Numpy
 - traitlets
-
-Coming soon: DAZER with Tensorflow 1.0
 
 ### Guide To Use
 ---
