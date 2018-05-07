@@ -28,7 +28,7 @@ python ./knrm/model/model_knrm.py config-file\
     --load_model: True or False. Start with a new model or continue training
 ```
 
-[sample-train.sh]('https://github.com/WHUIR/DAZER/blob/master/sample-train.sh')
+[sample-train.sh](https://github.com/WHUIR/DAZER/blob/master/sample-train.sh')
 
 **Testing**: pass the config file and testing data as
 ```ruby
