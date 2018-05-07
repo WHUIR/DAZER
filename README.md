@@ -20,7 +20,7 @@ Our Tensorflow implement of ACL 2018 paper 'A deep relevance model for zero-shot
 
 **Training** : pass the config file, training data and validation data as
 ```ruby
-python ./knrm/model/model_knrm.py config-file\
+python model.py config-file\
     --train \
     --train_file: path to training data\
     --validation_file: path to validation data\
@@ -32,7 +32,7 @@ python ./knrm/model/model_knrm.py config-file\
 
 **Testing**: pass the config file and testing data as
 ```ruby
-python ./knrm/model/model_knrm.py config-file\
+python model.py config-file\
     --test \
     --test_file: path to testing data\
     --test_size: size of testing data (number of testing samples)\
