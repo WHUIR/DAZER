@@ -2,16 +2,11 @@
 Our Tensorflow implement of ACL 2018 paper [A deep relevance model for zero-shot document filtering]
 
 <p align="center"> 
-<img src="https://github.com/AdeDZY/K-NRM/blob/master/model_simplified-1.png" width="400" align="center">
+<img src= width="400" align="center">
 </p>
 
 If you use this code for your scientific work, please cite it as ([bibtex](#cite-the-paper)):
 
-```
-C. Xiong, Z. Dai, J. Callan, Z. Liu, and R. Power. End-to-end neural ad-hoc ranking with kernel pooling. 
-In Proceedings of the 40th International ACM SIGIR Conference on Research & Development in Information Retrieval. 
-ACM. 2017.
-```
 
 
 
@@ -21,7 +16,7 @@ ACM. 2017.
 - Numpy
 - traitlets
 
-Coming soon: K-NRM with Tensorflow 1.0
+Coming soon: DAZER with Tensorflow 1.0
 
 ### Guide To Use
 ---
@@ -136,21 +131,7 @@ We also provide the click2vec model as described in our paper.
 ---
 If you use this code for your scientific work, please cite it as:
 
-```
-C. Xiong, Z. Dai, J. Callan, Z. Liu, and R. Power. End-to-end neural ad-hoc ranking with kernel pooling. 
-In Proceedings of the 40th International ACM SIGIR Conference on Research & Development in Information Retrieval. 
-ACM. 2017.
-```
 
-```
-@inproceedings{xiong2017neural,
-  author          = {{Xiong}, Chenyan and {Dai}, Zhuyun and {Callan}, Jamie and {Liu}, Zhiyuan and {Power}, Russell},
-  title           = "{End-to-End Neural Ad-hoc Ranking with Kernel Pooling}",
-  booktitle       = {Proceedings of the 40th International ACM SIGIR Conference on Research & Development in Information Retrieval},
-  organization    = {ACM},
-  year            = 2017,
-}
-```
 
 
 
