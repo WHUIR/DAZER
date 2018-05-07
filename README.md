@@ -52,7 +52,7 @@ Each training sample is a tuple of (seed words, postive document, negative docum
 
 `seed_words   \t postive_document   \t negative_document `
 
-Example: `177,705,632   \t  177,705,632,-1,2452,6,98   \t  177,705,632,3,25,14,37,2,146,159, -1 `
+Example: `334,453,768   \t  123,435,657,878,6,556   \t  443,554,534,3,67,8,12,2,7,9 `
 
 
 **Testing Data Format**
@@ -61,7 +61,7 @@ Each testing sample is a tuple of (seed words, document)
 
 `seed_words   \t document`
 
-Example: `177,705,632  \t   177,705,632,-1,2452,6,98`
+Example: `334,453,768  \t   123,435,657,878,6,556`
 
 **Label dict file format**
 
