@@ -14,14 +14,14 @@ Our Tensorflow implement of ACL 2018 paper 'A deep relevance model for zero-shot
 ### Guide To Use
 
 **Prepare your dataset**: first, prepare your own data.
-see below Data Preparation section.
+See [Data Preparation](#data-preparation)
 
 
 **Configure**: then, configure the model through the config file. Configurable parameters are listed [here](#configurations)
 
 [sample.config](https://github.com/WHUIR/DAZER/blob/master/sample.config)
 
-in addition you need to change the zero-shot label setting in [get_label.py](https://github.com/WHUIR/DAZER/blob/master/get_label.py)
+In additional, you need to change the zero-shot label settings in [get_label.py](https://github.com/WHUIR/DAZER/blob/master/get_label.py)
 
 
 **Training** : pass the config file, training data and validation data as
