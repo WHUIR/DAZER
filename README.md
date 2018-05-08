@@ -86,24 +86,24 @@ Example: `world 123`
 **Model Configurations**
 - <code>BaseNN.embedding_size</code>: embedding dimension 
 - <code>BaseNN.max_q_len</code>: max query length 
-- <code>BaseNN.max_d_len</code>: max document length (default: 50)
+- <code>BaseNN.max_d_len</code>: max document length
 - <code>DataGenerator.max_q_len</code>: max query length. Should be the same as <code>BaseNN.max_q_len</code> 
 - <code>DataGenerator.max_d_len</code>: max query length. Should be the same as <code>BaseNN.max_d_len</code> 
 - <code>BaseNN.vocabulary_size</code>: vocabulary size.
 - <code>DataGenerator.vocabulary_size</code>: vocabulary size.
-
-
-
-**Data**
-- <code>DAZER.emb_in</code>: initial embeddings
-- <code>DataGenerator.min_score_diff</code>: 
-minimum score differences between postive documents and negative ones 
-
-**Training Parameters**
 - <code>BaseNN.bath_size</code>: batch size 
 - <code>BaseNN.max_epochs</code>: max number of epochs to train
 - <code>BaseNN.eval_frequency</code>: evaluate model on validation set very this epochs
 - <code>BaseNN.checkpoint_steps</code>: save model very this epochs
+
+
+**Data**
+- <code>DAZER.emb_in</code>: initial embeddings
+- <code>DAZER.label_dict_path</code>: path of label dict file
+- <code>DAZER.word2id_path</code>: path of word2id file
+
+
+**Training Parameters**
 - <code>DAZER.epsilon</code>: epsilon for Adam Optimizer 
 - <code>DAZER.embedding_size</code>: embedding dimension of word
 - <code>DAZER.vocabulary_size</code>: vocabulary size of the dataset
@@ -115,8 +115,6 @@ minimum score differences between postive documents and negative ones
 - <code>DAZER.decoder_mlp2_num</code>: num of hidden units of second mlp in decoder part
 - <code>DAZER.model_learning_rate</code>: learning rate for model instead of adversarial calssifier
 - <code>DAZER.adv_learning_rate</code>: learning rate for adversarial classfier
-- <code>DAZER.label_dict_path</code>: path of label dict file
-- <code>DAZER.word2id_path</code>: path of word2id file
 - <code>DAZER.train_class_num</code>: num of class in training time
 - <code>DAZER.adv_term</code>: weight of adversarial loss when updating model's parameters
 - <code>DAZER.zsl_num</code>: num of zero-shot labels
