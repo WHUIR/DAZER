@@ -23,7 +23,7 @@ See the example: [sample.config](https://github.com/WHUIR/DAZER/blob/master/samp
 
 In additional, you need to change the zero-shot label settings in [get_label.py](https://github.com/WHUIR/DAZER/blob/master/get_label.py)
 
-(You need make sure get_label.py is in the same directory with model.py)
+(You need make sure both get_label.py and model.py are put in same directory)
 
 
 **Training** : pass the config file, training data and validation data as
@@ -143,5 +143,5 @@ Example: `1 0.3 0.4 0.5 0.6 -0.4 -0.2`
 - <code>DAZER.train_class_num</code>: num of class in training time
 - <code>DAZER.adv_term</code>: weight of adversarial loss when updating model's parameters
 - <code>DAZER.zsl_num</code>: num of zero-shot labels
-- <code>DAZER.zsl_type</code>: type of zero-shot label setting (you may have multiply zero-shot settings in same number of zero-shot label, this indicates which type of zero-shot label setting you pick for experiemnt, see[get_label.py](https://github.com/WHUIR/DAZER/blob/master/get_label.py) for more details)
+- <code>DAZER.zsl_type</code>: type of zero-shot label setting  ( you may have multiply zero-shot settings in same number of zero-shot label, this indicates which type of zero-shot label setting you pick for experiemnt, see [get_label.py](https://github.com/WHUIR/DAZER/blob/master/get_label.py) for more details )
 
