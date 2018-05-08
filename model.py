@@ -576,7 +576,7 @@ class DAZER(BaseNN):
         config.gpu_options.allow_growth = True
         save_var = [v for v in tf.trainable_variables()]
         # Create a local session to run the testing.
-        for i in range(50):
+        for i in range(int(self.max_epochs/self.checkpoint_steps)):
             with tf.Session(config=config) as sess:
                 test_point_stream = open(test_point_file_path)
                 outfile = open(output_file_path+'-epoch'+str(self.checkpoint_steps*(i+1))+'.txt', 'w')
