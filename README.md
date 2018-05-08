@@ -7,13 +7,11 @@ Our Tensorflow implement of ACL 2018 paper 'A deep relevance model for zero-shot
 
 
 ### Requirements
----
-- Tensorflow 1.0 
+- Tensorflow 1.2
 - Numpy
 - traitlets
 
 ### Guide To Use
----
 **Configure**: first, configure the model through the config file. Configurable parameters are listed [here](#configurations)
 
 [sample.config](https://github.com/WHUIR/DAZER/blob/master/sample.config)
@@ -42,9 +40,10 @@ python model.py config-file\
 ```
 Relevance scores will be output to output_score_file, one score per line, in the same order as test_file.
 
+
 ### Data Preperation
----
-All seed words and documents must be mapped into sequences of integer term ids. Term id starts with 1. 0 means padding signal.
+
+All seed words and documents must be mapped into sequences of integer term ids. Term id starts with 1. 
 
 **Training Data Format**
 
@@ -63,6 +62,7 @@ Each testing sample is a tuple of (seed words, document)
 
 Example: `334,453,768  \t   123,435,657,878,6,556`
 
+
 **Label Dict File Format**
 
 Each line is a tuple of (label_name, seed_words)
@@ -70,6 +70,7 @@ Each line is a tuple of (label_name, seed_words)
 `label_name/seed_words`
 
 Example: `alt.atheism/atheist christian atheism god islamic`
+
 
 **Word2id File Format**
 
@@ -79,12 +80,20 @@ Each line is a tuple of (word, id)
 
 Example: `world 123`
 
+**Embedding File Format**
+
+Each line is a tuple of (id, embedding)
+
+`id embedding`
+
+Example: `1 0.3 0.4 0.5 0.6 -0.4 -0.2`
+
 
 ### Configurations 
----
+
 
 **Model Configurations**
-- <code>BaseNN.embedding_size</code>: embedding dimension 
+- <code>BaseNN.embedding_size</code>: embedding dimension of word
 - <code>BaseNN.max_q_len</code>: max query length 
 - <code>BaseNN.max_d_len</code>: max document length
 - <code>DataGenerator.max_q_len</code>: max query length. Should be the same as <code>BaseNN.max_q_len</code> 
