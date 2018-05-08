@@ -162,8 +162,8 @@ class DAZER(BaseNN):
     kernal_num = Int(50, help='number of kernal').tag(config=True)
     regular_term = Float(0.01, help='param for controlling wight of L2 loss').tag(config=True)
     maxpooling_num = Int(3, help='number of k-maxpooling').tag(config=True)
-    decoder_mlp1_num = Int(75, help='number of hidden units of decoder mlp 1').tag(config=True)
-    decoder_mlp2_num = Int(1, help='number of hidden units of decoder mlp 2').tag(config=True)
+    decoder_mlp1_num = Int(75, help='number of hidden units of first mlp in relevance aggregation part').tag(config=True)
+    decoder_mlp2_num = Int(1, help='number of hidden units of second mlp in relevance aggregation part').tag(config=True)
     emb_in = Unicode('None', help="initial embedding. Terms should be hashed to ids.").tag(config=True)
     model_learning_rate = Float(0.001, help="learning rate of model").tag(config=True)
     adv_learning_rate = Float(0.001, help='learning rate of adv classifier').tag(config=True)
@@ -576,7 +576,7 @@ class DAZER(BaseNN):
         config.gpu_options.allow_growth = True
         save_var = [v for v in tf.trainable_variables()]
         # Create a local session to run the testing.
-        for i in range(20):
+        for i in range(50):
             with tf.Session(config=config) as sess:
                 test_point_stream = open(test_point_file_path)
                 outfile = open(output_file_path+'-epoch'+str(self.checkpoint_steps*(i+1))+'.txt', 'w')
