@@ -19,7 +19,7 @@ See [Data Preparation](#data-preparation)
 
 **Configure**: then, configure the model through the config file. Configurable parameters are listed [here](#configurations)
 
-[sample.config](https://github.com/WHUIR/DAZER/blob/master/sample.config)
+See the example: [sample.config](https://github.com/WHUIR/DAZER/blob/master/sample.config)
 
 In additional, you need to change the zero-shot label settings in [get_label.py](https://github.com/WHUIR/DAZER/blob/master/get_label.py)
 
