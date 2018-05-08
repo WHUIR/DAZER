@@ -1,1 +1,1 @@
-output file is saved in this directory
+Output file is saved in this directory
