@@ -12,9 +12,13 @@ Our Tensorflow implement of ACL 2018 paper 'A deep relevance model for zero-shot
 - traitlets
 
 ### Guide To Use
+**Prepare your dataset**: first, prepare your data.
+see [here](#Data_Preperation)
 **Configure**: first, configure the model through the config file. Configurable parameters are listed [here](#configurations)
 
 [sample.config](https://github.com/WHUIR/DAZER/blob/master/sample.config)
+
+
 
 **Training** : pass the config file, training data and validation data as
 ```ruby
@@ -23,7 +27,7 @@ python model.py config-file\
     --train_file: path to training data\
     --validation_file: path to validation data\
     --checkpoint_dir: directory to store/load model checkpoints\ 
-    --load_model: True or False. Start with a new model or continue training
+    --load_model: True or False(depends on existing or not). Start with a new model or continue training
 ```
 
 [sample-train.sh](https://github.com/WHUIR/DAZER/blob/master/sample-train.sh)
@@ -41,7 +45,7 @@ python model.py config-file\
 Relevance scores will be output to output_score_file, one score per line, in the same order as test_file.
 
 
-### Data Preperation
+### Data_Preperation
 
 All seed words and documents must be mapped into sequences of integer term ids. Term id starts with 1. 
 
@@ -127,7 +131,7 @@ Example: `1 0.3 0.4 0.5 0.6 -0.4 -0.2`
 - <code>DAZER.train_class_num</code>: num of class in training time
 - <code>DAZER.adv_term</code>: weight of adversarial loss when updating model's parameters
 - <code>DAZER.zsl_num</code>: num of zero-shot labels
-- <code>DAZER.zsl_type</code>: type of zero-shot label setting
+- <code>DAZER.zsl_type</code>: type of zero-shot label setting 
 
 
 
