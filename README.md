@@ -137,12 +137,11 @@ Example: `1 0.3 0.4 0.5 0.6 -0.4 -0.2`
 - <code>DAZER.kernal_num</code>: num of kernel
 - <code>DAZER.regular_term</code>: weight of L2 loss
 - <code>DAZER.maxpooling_num</code>: num of K-max pooling
-- <code>DAZER.decoder_mlp1_num</code>: num of hidden units of first mlp in decoder part
-- <code>DAZER.decoder_mlp2_num</code>: num of hidden units of second mlp in decoder part
+- <code>DAZER.decoder_mlp1_num</code>: num of hidden units of first mlp in relevance aggregation part 
+- <code>DAZER.decoder_mlp2_num</code>: num of hidden units of second mlp in relevance aggregation part
 - <code>DAZER.model_learning_rate</code>: learning rate for model instead of adversarial calssifier
 - <code>DAZER.adv_learning_rate</code>: learning rate for adversarial classfier
 - <code>DAZER.train_class_num</code>: num of class in training time
 - <code>DAZER.adv_term</code>: weight of adversarial loss when updating model's parameters
 - <code>DAZER.zsl_num</code>: num of zero-shot labels
 - <code>DAZER.zsl_type</code>: type of zero-shot label setting  ( you may have multiply zero-shot settings in same number of zero-shot label, this indicates which type of zero-shot label setting you pick for experiemnt, see [get_label.py](https://github.com/WHUIR/DAZER/blob/master/get_label.py) for more details )
-
