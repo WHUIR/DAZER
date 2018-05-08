@@ -7,6 +7,7 @@ Our Tensorflow implement of ACL 2018 paper 'A deep relevance model for zero-shot
 
 
 ### Requirements
+- Python 3.5
 - Tensorflow 1.2
 - Numpy
 - Traitlets
