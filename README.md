@@ -1,5 +1,5 @@
 # DAZER
-Our Tensorflow implement of ACL 2018 paper 'A deep relevance model for zero-shot document filtering'
+The Tensorflow implement of accepted ACL 2018 paper 'A deep relevance model for zero-shot document filtering'
 
 <p align="center"> 
 <img src='https://github.com/WHUIR/DAZER/blob/master/model-img.png' width="800" align="center">
