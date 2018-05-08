@@ -63,7 +63,7 @@ Each testing sample is a tuple of (seed words, document)
 
 Example: `334,453,768  \t   123,435,657,878,6,556`
 
-**Label dict file format**
+**Label Dict File Format**
 
 Each line is a tuple of (label_name, seed_words)
 
@@ -71,7 +71,7 @@ Each line is a tuple of (label_name, seed_words)
 
 Example: `alt.atheism/atheist christian atheism god islamic`
 
-**Word2id file format**
+**Word2id File Format**
 
 Each line is a tuple of (word, id)
 
