@@ -23,6 +23,8 @@ See the example: [sample.config](https://github.com/WHUIR/DAZER/blob/master/samp
 
 In additional, you need to change the zero-shot label settings in [get_label.py](https://github.com/WHUIR/DAZER/blob/master/get_label.py)
 
+(You need make sure get_label.py is in the same directory with model.py)
+
 
 **Training** : pass the config file, training data and validation data as
 ```ruby
@@ -34,7 +36,7 @@ python model.py config-file\
     --load_model: True or False(depends on existing or not). Start with a new model or continue training
 ```
 
-[sample-train.sh](https://github.com/WHUIR/DAZER/blob/master/sample-train.sh)
+See example: [sample-train.sh](https://github.com/WHUIR/DAZER/blob/master/sample-train.sh)
 
 **Testing**: pass the config file and testing data as
 ```ruby
@@ -93,6 +95,7 @@ Each line is a tuple of (word, id)
 
 Example: `world 123`
 
+
 **Embedding File Format**
 
 Each line is a tuple of (id, embedding)
@@ -140,10 +143,5 @@ Example: `1 0.3 0.4 0.5 0.6 -0.4 -0.2`
 - <code>DAZER.train_class_num</code>: num of class in training time
 - <code>DAZER.adv_term</code>: weight of adversarial loss when updating model's parameters
 - <code>DAZER.zsl_num</code>: num of zero-shot labels
-- <code>DAZER.zsl_type</code>: type of zero-shot label setting 
-
-
-
-
-
+- <code>DAZER.zsl_type</code>: type of zero-shot label setting (you may have multiply zero-shot settings in same number of zero-shot label, this indicates which type of zero-shot label setting you pick for experiemnt, see[get_label.py](https://github.com/WHUIR/DAZER/blob/master/get_label.py) for more details)
 
