@@ -12,14 +12,16 @@ Our Tensorflow implement of ACL 2018 paper 'A deep relevance model for zero-shot
 - traitlets
 
 ### Guide To Use
-**Prepare your dataset**: first, prepare your data.
-see [here](#Data_Preperation)
+
+**Prepare your dataset**: first, prepare your own data.
+see below Data Preparation section.
 
 
-**Configure**: first, configure the model through the config file. Configurable parameters are listed [here](#configurations)
+**Configure**: then, configure the model through the config file. Configurable parameters are listed [here](#configurations)
 
 [sample.config](https://github.com/WHUIR/DAZER/blob/master/sample.config)
 
+in addition you need to change the zero-shot label setting in [get_label.py](https://github.com/WHUIR/DAZER/blob/master/get_label.py)
 
 
 **Training** : pass the config file, training data and validation data as
@@ -47,7 +49,7 @@ python model.py config-file\
 Relevance scores will be output to output_score_file, one score per line, in the same order as test_file.
 
 
-### Data_Preperation
+### Data Preparation
 
 All seed words and documents must be mapped into sequences of integer term ids. Term id starts with 1. 
 
@@ -67,6 +69,11 @@ Each testing sample is a tuple of (seed words, document)
 `seed_words   \t document`
 
 Example: `334,453,768  \t   123,435,657,878,6,556`
+
+
+**Validation Data Format**
+
+The format is same as training data format
 
 
 **Label Dict File Format**
