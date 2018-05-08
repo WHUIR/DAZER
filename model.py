@@ -639,13 +639,13 @@ if __name__ == '__main__':
     conf = PyFileConfigLoader(args.config_file_path).load_config()
 
     if args.train:
-        nn = ZSL_TC(config=conf)
+        nn = DAZER(config=conf)
         nn.train(train_pair_file_path=args.train_file,
                  val_pair_file_path=args.validation_file,
                  checkpoint_dir=args.checkpoint_dir,
                  load_model=args.load_model)
     else:
-        nn = ZSL_TC(config=conf)
+        nn = DAZER(config=conf)
         nn.test(test_point_file_path=args.test_file,
                 test_size=args.test_size,
                 output_file_path=args.output_score_file,
