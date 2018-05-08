@@ -9,7 +9,7 @@ Our Tensorflow implement of ACL 2018 paper 'A deep relevance model for zero-shot
 ### Requirements
 - Tensorflow 1.2
 - Numpy
-- traitlets
+- Traitlets
 
 ### Guide To Use
 
@@ -52,6 +52,7 @@ Relevance scores will be output to output_score_file, one score per line, in the
 
 
 ### Data Preparation
+
 
 All seed words and documents must be mapped into sequences of integer term ids. Term id starts with 1. 
 
