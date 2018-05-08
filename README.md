@@ -89,16 +89,16 @@ Example: `world 123`
 - <code>BaseNN.max_d_len</code>: max document length
 - <code>DataGenerator.max_q_len</code>: max query length. Should be the same as <code>BaseNN.max_q_len</code> 
 - <code>DataGenerator.max_d_len</code>: max query length. Should be the same as <code>BaseNN.max_d_len</code> 
-- <code>BaseNN.vocabulary_size</code>: vocabulary size.
-- <code>DataGenerator.vocabulary_size</code>: vocabulary size.
-- <code>BaseNN.bath_size</code>: batch size 
+- <code>BaseNN.vocabulary_size</code>: vocabulary size
+- <code>DataGenerator.vocabulary_size</code>: vocabulary size
+- <code>BaseNN.batch_size</code>: batch size 
 - <code>BaseNN.max_epochs</code>: max number of epochs to train
 - <code>BaseNN.eval_frequency</code>: evaluate model on validation set very this epochs
 - <code>BaseNN.checkpoint_steps</code>: save model very this epochs
 
 
 **Data**
-- <code>DAZER.emb_in</code>: initial embeddings
+- <code>DAZER.emb_in</code>: path of initial embeddings file
 - <code>DAZER.label_dict_path</code>: path of label dict file
 - <code>DAZER.word2id_path</code>: path of word2id file
 
