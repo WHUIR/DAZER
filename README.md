@@ -14,6 +14,8 @@ Our Tensorflow implement of ACL 2018 paper 'A deep relevance model for zero-shot
 ### Guide To Use
 **Prepare your dataset**: first, prepare your data.
 see [here](#Data_Preperation)
+
+
 **Configure**: first, configure the model through the config file. Configurable parameters are listed [here](#configurations)
 
 [sample.config](https://github.com/WHUIR/DAZER/blob/master/sample.config)
