@@ -1,5 +1,5 @@
 # DAZER
-The Tensorflow implement of accepted ACL 2018 paper 'A deep relevance model for zero-shot document filtering', Chenliang Li, Wei Zhou, Feng Ji, Yu Duan, Haiqing Chen:
+The Tensorflow implement of accepted ACL 2018 paper 'A deep relevance model for zero-shot document filtering', Chenliang Li, Wei Zhou, Feng Ji, Yu Duan, Haiqing Chen  
 paper url: http://aclweb.org/anthology/P18-1214
 
 <p align="center"> 
