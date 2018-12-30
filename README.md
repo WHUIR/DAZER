@@ -1,5 +1,5 @@
 # DAZER
-The Tensorflow implementation of accepted ACL 2018 paper:    
+The Tensorflow implementation of our ACL 2018 paper:    
 ***A Deep Relevance Model for Zero-Shot Document Filtering, Chenliang Li, Wei Zhou, Feng Ji, Yu Duan, Haiqing Chen***
 Paper url: http://aclweb.org/anthology/P18-1214
 
