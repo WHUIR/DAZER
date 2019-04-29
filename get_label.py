@@ -27,6 +27,12 @@ def get_labels(label_dict_path,word2id_path):
 def get_label_index(label_list, zsl_num,zsl_type):
     #get the index of zeroshot label
     #below is the experiments setting of 20NG in our ACL paper, you should change them in your own dataset
+    
+    #e.g., zeroshot_labels_1[0] = [['sci.space'],['comp.graphics']]
+    #it means we use label "sci.space" for zeroshot experiments
+    #and randomly pick label 'comp.graphics' to prevent overfitting
+    #please refer to the "Evaluation protocol" part of our paper
+    
     zeroshot_labels_1 = [
                  [['sci.space'],['comp.graphics']],
                  [['rec.sport.baseball'],['talk.politics.misc']],
